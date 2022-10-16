@@ -16,6 +16,11 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
+        panel1.BackColor = ColorTranslator.FromHtml("#586F6B");
+        panel2.BackColor = ColorTranslator.FromHtml("#586F6B");
+        panel3.BackColor = ColorTranslator.FromHtml("#586F6B");
+        panel4.BackColor = ColorTranslator.FromHtml("#DC965A");
+        panel5.BackColor = ColorTranslator.FromHtml("#586F6B");
     }
 
     private async void button1_Click(object sender, EventArgs e)
@@ -38,7 +43,7 @@ public partial class Form1 : Form
         var movie = JsonSerializer.Deserialize<Models.Movie>(jsonStr);
 
 
-        //pictureBox1.LoadAsync(movie?.Poster);
+        //pictureBox1.LoadAsync(movie?.Poster); 
     }
 
     private async void Form1_Load(object sender, EventArgs e)
@@ -46,7 +51,6 @@ public partial class Form1 : Form
         using HttpClient client = new();
         foreach (var item in Fakedata.MovieNames)
         {
-
             jsonStr = await client.GetStringAsync($"{_url}&t={item}&plot=full");
             var movie = JsonSerializer.Deserialize<Movie>(jsonStr);
             flowLayoutPanel1.Controls.Add(new Uc_Controls(movie));

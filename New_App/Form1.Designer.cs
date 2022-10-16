@@ -32,13 +32,14 @@ partial class Form1
     {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uc_Controls1 = new New_App.User_Controls.Uc_Controls();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uc_Controls1 = new New_App.User_Controls.Uc_Controls();
             this.button1 = new System.Windows.Forms.Button();
             this.SearchtextBox = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -49,33 +50,24 @@ partial class Form1
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 547);
+            this.panel1.Size = new System.Drawing.Size(183, 547);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(651, 0);
+            this.panel2.Location = new System.Drawing.Point(646, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(149, 547);
+            this.panel2.Size = new System.Drawing.Size(154, 547);
             this.panel2.TabIndex = 1;
-            // 
-            // uc_Controls1
-            // 
-            this.uc_Controls1.AutoScroll = true;
-            this.uc_Controls1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uc_Controls1.Location = new System.Drawing.Point(3, 3);
-            this.uc_Controls1.Name = "uc_Controls1";
-            this.uc_Controls1.Size = new System.Drawing.Size(257, 0);
-            this.uc_Controls1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(140, 0);
+            this.panel3.Location = new System.Drawing.Point(183, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(511, 100);
+            this.panel3.Size = new System.Drawing.Size(463, 100);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -83,7 +75,7 @@ partial class Form1
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Small", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(177, 23);
+            this.label2.Location = new System.Drawing.Point(153, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 54);
@@ -95,25 +87,36 @@ partial class Form1
             this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.SearchtextBox);
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(140, 100);
+            this.panel4.Location = new System.Drawing.Point(183, 100);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(511, 447);
+            this.panel4.Size = new System.Drawing.Size(463, 447);
             this.panel4.TabIndex = 3;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.uc_Controls1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(142, 61);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(260, 264);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(463, 396);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // uc_Controls1
+            // 
+            this.uc_Controls1.AutoScroll = true;
+            this.uc_Controls1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_Controls1.Location = new System.Drawing.Point(3, 3);
+            this.uc_Controls1.Name = "uc_Controls1";
+            this.uc_Controls1.Size = new System.Drawing.Size(336, 0);
+            this.uc_Controls1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(292, 14);
+            this.button1.Location = new System.Drawing.Point(268, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -124,10 +127,18 @@ partial class Form1
             // SearchtextBox
             // 
             this.SearchtextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SearchtextBox.Location = new System.Drawing.Point(152, 14);
+            this.SearchtextBox.Location = new System.Drawing.Point(128, 14);
             this.SearchtextBox.Name = "SearchtextBox";
             this.SearchtextBox.Size = new System.Drawing.Size(100, 23);
             this.SearchtextBox.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(463, 51);
+            this.panel5.TabIndex = 4;
             // 
             // Form1
             // 
@@ -157,8 +168,9 @@ partial class Form1
     private Panel panel3;
     private Label label2;
     private Panel panel4;
-    private User_Controls.Uc_Controls uc_Controls1;
     private Button button1;
     private TextBox SearchtextBox;
+    private Panel panel5;
     private FlowLayoutPanel flowLayoutPanel1;
+    private User_Controls.Uc_Controls uc_Controls1;
 }

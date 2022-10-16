@@ -13,6 +13,12 @@ public class Fakedata
             "Avengers",
             "Spider-Man",
             "Avatar",
-            "Iron+Man"
+            "Iron+Man",
+            "Avengers",
+            "Spider-Man",
+            "Avengers",
+            "Spider-Man",
+            "Avengers",
+            "Spider-Man",
         };
 }

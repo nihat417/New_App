@@ -18,12 +18,19 @@ public partial class Uc_Controls : UserControl
     public Uc_Controls(Movie movie)
     {
         InitializeComponent();
+
+        //panel1.ForeColor = ColorTranslator.FromHtml("#3C887E");
+        //panel1.BackColor = ColorTranslator.FromHtml("#A17C6B");
+        label1.BackColor = ColorTranslator.FromHtml("#DFA069");
+        label2.BackColor = ColorTranslator.FromHtml("#DFA069");
+        label3.BackColor = ColorTranslator.FromHtml("#DFA069");
+        label4.BackColor = ColorTranslator.FromHtml("#DFA069");
         Movie = movie;
         labelNamemovie.Text = movie.Title;
-        labelYear.Text = movie.Year;
-        labelJanre.Text = movie.Genre;
-        labelCountry.Text = movie.Country;
-        labelPremier.Text = movie.Released;
+        labelYear.Text = $"Year: {movie.Year}";
+        labelJanre.Text = $"imdbRating: {movie.imdbRating}";
+        labelCountry.Text = $"Country: {movie.Country}";
+        labelPremier.Text = $"Premier: {movie.Released}";
         labelQuality.Text = "Full HD";
         pictureBox1.LoadAsync(movie?.Poster);
     }
