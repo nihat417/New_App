@@ -10,15 +10,19 @@ public class Fakedata
 {
     public static List<string> MovieNames { get; set; }=new()
         {
+            "The GodFather",
+            "Angry Man",
+            "Fight Club",
+            "The Matrix",
             "Avengers",
+            "Se7en",
+            "Interstellar",
+            "The Green Mile",
+            "Back to the Future",
+            "The Lion King",
             "Spider-Man",
+            "Gladiator",
+            "The Usual Suspects",
             "Avatar",
-            "Iron+Man",
-            "Avengers",
-            "Spider-Man",
-            "Avengers",
-            "Spider-Man",
-            "Avengers",
-            "Spider-Man",
         };
 }

@@ -1,4 +1,6 @@
-﻿using New_App.Models;
+﻿using Microsoft.VisualBasic.Devices;
+using New_App.Forms;
+using New_App.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,12 +32,20 @@ public partial class Uc_Controls : UserControl
         labelYear.Text = $"Year: {movie.Year}";
         labelJanre.Text = $"imdbRating: {movie.imdbRating}";
         labelCountry.Text = $"Country: {movie.Country}";
+        labelTime.Text = $"Run Time: {movie.Runtime}";
         labelPremier.Text = $"Premier: {movie.Released}";
-        labelQuality.Text = "Full HD";
+        labelQuality.Text = $"Full HD";
         pictureBox1.LoadAsync(movie?.Poster);
     }
 
     public Uc_Controls()
     {
+    }
+
+    private void pictureBox1_Click(object sender, EventArgs e)
+    {
+
+        InfoFilm infoFilm = new(Movie);
+        infoFilm.Show();
     }
 }

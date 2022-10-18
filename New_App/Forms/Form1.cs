@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using New_App.Repository;
 using New_App.Models;
 using New_App.User_Controls;
+using New_App.Forms;
 
 namespace New_App;
 
@@ -16,11 +17,11 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
-        panel1.BackColor = ColorTranslator.FromHtml("#586F6B");
-        panel2.BackColor = ColorTranslator.FromHtml("#586F6B");
-        panel3.BackColor = ColorTranslator.FromHtml("#586F6B");
+        panel1.BackColor = ColorTranslator.FromHtml("#262730");
+        panel2.BackColor = ColorTranslator.FromHtml("#262730");
+        panel3.BackColor = ColorTranslator.FromHtml("#262730");
         panel4.BackColor = ColorTranslator.FromHtml("#DC965A");
-        panel5.BackColor = ColorTranslator.FromHtml("#586F6B");
+        panel5.BackColor = ColorTranslator.FromHtml("#262730");
     }
 
     private async void button1_Click(object sender, EventArgs e)
@@ -44,6 +45,8 @@ public partial class Form1 : Form
 
 
         //pictureBox1.LoadAsync(movie?.Poster); 
+        InfoFilm info = new(movie);
+        info.Show();
     }
 
     private async void Form1_Load(object sender, EventArgs e)
@@ -54,7 +57,6 @@ public partial class Form1 : Form
             jsonStr = await client.GetStringAsync($"{_url}&t={item}&plot=full");
             var movie = JsonSerializer.Deserialize<Movie>(jsonStr);
             flowLayoutPanel1.Controls.Add(new Uc_Controls(movie));
-           
         }
     }
 
